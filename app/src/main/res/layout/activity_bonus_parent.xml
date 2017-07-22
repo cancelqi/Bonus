@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bonus_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dexlor.bonus.BonusParentActivity"
+    android:background="@drawable/lanuch_bk">
+
+    <TextView
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_screen_title"
+        android:fontFamily="sans-serif"
+        android:textSize="30sp"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
+
+    <Button
+        android:text="@string/login_button_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_login_parent"
+        android:layout_alignBaseline="@+id/button_login_child"
+        android:layout_alignBottom="@+id/button_login_child"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/login_password"
+        android:maxLength="30"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"
+        android:layout_above="@+id/button_login_child"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:maxLength="30"
+        android:id="@+id/login_username"
+        android:hint="请输入账号"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"
+        android:layout_above="@+id/login_password"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp" />
+
+    <Button
+        android:text="@string/login_button_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_login_child"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/login_password"
+        android:layout_alignStart="@+id/login_password" />
+
+    <TextView
+        android:text="新用户注册账号"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/textview_register"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:layout_above="@+id/login_username"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

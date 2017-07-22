@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">攒红花</string>
+    <string name="login_button_child">孩子</string>
+    <string name="login_button_parent">家长</string>
+
+</resources>
